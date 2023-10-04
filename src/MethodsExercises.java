@@ -37,24 +37,35 @@ public class MethodsExercises {
 
     }
 
-    public static void main (String[] args) {
-        range(4, 1_000_000_000);
+    public static void facNumber (String[] args) {
+        int userSumAnswer = range(4, 10);
         // 1_000_000_000 is the max int can go
+        String myOutput = "1";
+        long mathBucket = 1;
+
+        for (int i = 1; i <= userSumAnswer; i++) {
+            if(i == 1){
+                System.out.printf("%d! = %-16s = %d%n", i, myOutput, mathBucket);
+                continue;
+            }
+
+            mathBucket *= i;
+            myOutput += " x " + i;
+
+            System.out.printf("%d! = %-16s = %d%n", i, myOutput,mathBucket);
+
+        }
+
+        localScanner.nextLine();
+        System.out.println("Do you want to do it again?");
+        String userContinue = localScanner.nextLine();
+//
+//        if(userContinue.toLowerCase().equals("yes")){
+//            range();
+        }
     }
 
-//    public static void count(int n) {
-//        if (n <= 0) {
-//            System.out.println("All done!");
-//            return;
-//        }
-//        System.out.println(n);
-//        count(n - 1);
-//    }
-//
-//    public static void main(String[] args) {
-//        count(5);
-//    }
 
 
-}
+
 
