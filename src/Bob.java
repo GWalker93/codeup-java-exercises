@@ -25,7 +25,7 @@ public class Bob {
 
             String  userAnswer2= myScanner.nextLine();
 
-            tiredOfBob = userAnswer2.equalsIgnoreCase("yes");
+            tiredOfBob = userAnswer2.equalsIgnoreCase("no");
     }
         while(tiredOfBob);
     }
