@@ -6,8 +6,6 @@ public class MoviesApplication {
 
     public static Scanner localScanner = new Scanner(System.in);
 
-    count = 0;
-    old
     public static void main(String[] args){
 
         boolean movieComplete = true;
